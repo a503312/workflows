@@ -19,6 +19,6 @@ jobs:
       with:
         subscriptionId: ${{ secrets.HAZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ secrets.HAZURE_RG }}
-        template: ./azuredeploy.bicep
+        template: ./storage.bicep
         parameters: storagePrefix=mystore
         failOnStdErr: false
