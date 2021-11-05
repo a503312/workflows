@@ -6,3 +6,4 @@ resource storage 'Microsoft.Storage/storageAccounts@2021-06-01' = {
   kind: 'StorageV2' 
   location: 'westeurope'
 }
+
