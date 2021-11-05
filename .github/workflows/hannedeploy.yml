@@ -20,5 +20,5 @@ jobs:
         subscriptionId: ${{ secrets.HAZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ secrets.HAZURE_RG }}
         template: ./storage.bicep
-        parameters: storagePrefix=mystore
+        parameters: storagePrefix=knuteinarz
         failOnStdErr: false
