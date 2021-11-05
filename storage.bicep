@@ -31,3 +31,11 @@ resource stg 'Microsoft.Storage/storageAccounts@2021-04-01' = {
 }
 
 output storageEndpoint object = stg.properties.primaryEndpoints
+resource storage 'Microsoft.Storage/storageAccounts@2021-06-01' = {
+  name: 'klovnestoragebicep'
+  sku: {
+    name: 'Standard_LRS'
+  }
+  kind: 'StorageV2' 
+  location: 'westeurope'
+}
