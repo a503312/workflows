@@ -11,14 +11,14 @@ jobs:
       # Log into Azure
     - uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        creds: ${{ secrets.HAZURE_CREDENTIALS }}
 
       # Deploy Bicep file
     - name: deploy
       uses: azure/arm-deploy@v1
       with:
-        subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
-        resourceGroupName: ${{ secrets.AZURE_RG }}
+        subscriptionId: ${{ secrets.HAZURE_SUBSCRIPTION }}
+        resourceGroupName: ${{ secrets.HAZURE_RG }}
         template: ./azuredeploy.bicep
         parameters: storagePrefix=mystore
         failOnStdErr: false
